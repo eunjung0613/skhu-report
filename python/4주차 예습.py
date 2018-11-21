@@ -5,3 +5,6 @@ def pibo(num):
     return a
 
 print(pibo(13))
+
+str1 = "ㄱㄷ"
+print(str1.find("ㅅ"))
