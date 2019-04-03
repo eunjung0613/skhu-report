@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="UTF-8">
+<title>수영</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i}; // 숫자가 10보다 작을 경우 앞에 0을 붙여줌
+    return i;
+}
+//-->
+</script>
+<style type="text/css">
+	#headname{text-shadow: 3px 3px 4px pink}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #66CCFF;
+}
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+body {
+	background-color: #FFFFFF;
+}
+</style>
+</head>
+<body onLoad="startTime()">
+<div id="Layer2" style="position:absolute; width:500px; height:450px; z-index:1; left: 126px; top: -7px; visibility: visible;">
+  <iframe src="logo.htm" frameborder="0" scrolling="no"></iframe>
+</div>
+<div id="Layer3" style="position:absolute; width:200px; height:115px; z-index:2; left: 226px; top: 126px; font-style: italic; visibility: visible;">
+ &lt;SWIM LOGO&gt;
+</div>
+<div id="Layer1" style="position:absolute; width:114px; height:36px; z-index:9; left: 17px; top: 149px; font-weight: bold; visibility: visible;">현재시간 ♣ </div>
+
+<div id="clock" style="position:absolute; width:100px; height:100px; z-index:7; left: 17px; top: 174px; font-size: 18px; visibility: visible;"></div>
+<canvas id = "myCanvas" width = "300" height="200"></canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("myCanvas");
+		var myContext = canvas.getContext("2d");
+			
+		var imgObj = new Image();
+		imgObj.src = "swim.png";
+		imgObj.onload = function(){
+		myContext.drawImage(imgObj,0,0,160,126);
+		}
+		
+	</script>
+    <div id="name" style="position:absolute; width:200px; height:115px; z-index:3; left: -13px; top: -2px; visibility: visible;">
+      <div align="center">
+        <p>&nbsp;</p>
+        <p id = "headname"><strong><a href="iframe_main.htm" target="main">S W I M</a></strong></p>
+      </div>
+</div>
+        <div id="table" style="position:absolute; width:723px; height:90px; z-index:4; left: 389px; top: 17px; visibility: visible;">
+          <table width="642" height="86" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <th><div align="center"><a href="iframe_swim.htm" target="main">수영</a></div></th>
+              <th>
+                <div align="center"><a href="iframe_swim2.htm" target="main">수영 중목과 경기방법</a></div></th>
+              <th><a href="iframe_swim3.htm" target="main">경기 방식</a> </th>
+              <th><div align="center"><a href="iframe_swim4.htm" target="main">설문지</a></div></th>
+            </tr>
+          </table>
+</div>
+        <div id="frmae1" style="position:absolute; width:732px; height:500px; z-index:8; left: 493px; top: 135px; visibility: visible;"><iframe src="iframe_main.htm" width="700" height="500" name="main" frameborder="0" scrolling="auto"><iframe></div>
+
+</body>
+</html>

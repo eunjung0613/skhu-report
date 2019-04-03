@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>과제7-7</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<script type ="text/javascript">
+			
+			var name1 = "자유형"
+			var name2 = "배영"
+			var name3 = "평영"
+			var name4 = "접영"
+			
+			var choose_list = name1+"\n"+name2+"\n"+name3+"\n"+name4+"\n";
+			var question = prompt("가장 마음에 드는 수영영법을 골라주세요.\n"+choose_list,"자유형");
+			
+			if (question == "자유형")
+				document.write("우리가 보통 자유형이라고 부르는 것은 크롤영법을 이야기하는 것으로, 크롤은 몸을 편, 저항이 적은 자세로 두 팔을 끊임없이 교대로 움직이며, 물을 저어가고 두 다리는 상하로 움직이며 물을 뒤편으로 밀어냄으로서 계속적인 추진력을 얻을 수가 있는 가장 빠른 영법입니다.")
+			else if (question == "배영"){
+				document.write("어깨와 가슴은 편안하게 펴 주어야만 하며, 발끝은 수면에 위치하도록 합니다. 자유형과 마찬가지로 머리는 고정시키며 양쪽 어깨를 교대로 롤링(Rolling)해야 합니다.");}
+			else if (question == "평영"){
+				document.write("수영에서, 수면과 수평을 이루어 개구리처럼 양팔과 두 발을 오므렸다가 펴는 것을 반복하는 영법입니다.");}
+			else if (question == "접영"){
+				document.write("영법 중 하나로, 두 팔을 동시에 앞으로 뻗어 물을 끌어내리면서 양다리를 모아 위아래로 움직이며 발등으로 물을 치면서 나아가는 것입니다.");}
+			else{
+				document.write("<"+question+">"+"\n")
+				document.write("이렇게 입력하신게 맞습니까? 아마도 글자를 틀리셨거나 선택지 안에서 고르지 않으신 것 같습니다. 새로고침을 누르시고 다시 선택해주세요.")
+			}
+		</script>
+	</body>
+</html>

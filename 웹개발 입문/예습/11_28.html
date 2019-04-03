@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>11월 28일</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<div id = "outerBox" style="background: blue; width:550px;height:300px;" ></div>
+		<div id = "innerBox" style="background:yellow; width: 450px; height:200px;
+					position: absolute; left: 50px; top: 50px; visibility: visible"></div>
+				<p id="img1" width="100px"
+					style="position:absolute;left:70px;top:50px;visibility:visible;">
+					보여요?
+				</p>
+	<script type ="text/javascript">
+		function toggleVisibility(id){
+			var dom = document.getElementById(id);
+			if(dom.style.visibility=="visible")
+				dom.style.visibility="hidden";
+			else
+				dom.style.visibility="visible";
+		}
+	</script>
+	Toggle Visibility:
+	<button onclick="toggleVisibility('img1');">보임/숨김</button>
+	</body>
+</html>

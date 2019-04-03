@@ -1,0 +1,9 @@
+/*외부 스타일시트*/
+#hd {color : gray; font-family: "궁서" san-serif; text-align: center; text-shadow:3px 3px 4px pink;}
+.ta{line-height: 250%}
+li.fi{list-style-type: disc}
+#tab{table-layout: auto;width:100%;border-collapse: collapse;}
+#tab_in{text-align:center;}
+#tab_col{color:gray;}
+#tab_fu{line-height:250%}
+#tab caption{font-size: 14pt; font-weight: bold; caption-side: bottom;}

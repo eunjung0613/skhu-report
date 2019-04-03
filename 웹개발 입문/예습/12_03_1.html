@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2018.12.03</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<button id="b1">innerHTML</button>
+	<button id="b2">innerText</button>
+	<br/>
+	<p id= "text">무명씨!</p>
+ 	<script  type="text/javascript" >
+		document.getElementById("b1").onmouseover = mouseover_innerHTML;
+		document.getElementById("b2").onmouseover = mouseover_innerText;
+ 		document.getElementById("b1").onmouseout = reset_text;
+		document.getElementById("b2").onmouseout = reset_text;
+ 		function mouseover_innerHTML() {
+			document.getElementById("text").innerHTML = "<h1>김은정</h1>";
+		}
+ 
+		function mouseover_innerText() {
+			document.getElementById("text").innerText = "김은정";
+		}
+ 		function reset_text() {
+			document.getElementById("text").innerHTML ="무명씨!";
+		}	
+	</script>
+	</body>
+</html>

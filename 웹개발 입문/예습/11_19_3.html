@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>11월 19일 3</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<script type ="text/javascript">
+		function display_Student(){
+		 document.write("학번 : "+this.id+"<br/>");
+		 document.write("이름 : "+this.name+"<br/>");
+		 document.write("소속 : "+this.dept+"<br/>");
+		}
+		
+		function Student (id_value,name_value,dept_value){
+		this.id = id_value;
+		this.name = name_value;
+		this.dept = dept_value;
+		this.display = display_Student;
+		}
+		
+		var Student_obj = new Student(201814003,"김은정","IT융합자율학부");
+		Student_obj.display();
+	</script>
+	</body>
+</html>

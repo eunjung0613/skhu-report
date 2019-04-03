@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>evenSecDelay</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<script type ="text/javascript">
+			function first(){
+				document.write("2초 경과 <br/>");
+			}
+			function second(){
+				document.write("4초 경과 <br/>");
+			}
+			function third(){
+				document.write("6초 경과 <br/>");
+			}
+			for (i=0;i<1;i++){
+				setTimeout(first,2000);
+				setTimeout(second,4000);
+				setTimeout(third,6000);
+			}
+		</script>
+	</body>
+</html>

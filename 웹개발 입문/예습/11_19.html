@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>11월 19일</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<script type ="text/javascript">
+			var win;
+			function open_window(){
+			var url = prompt("원하는 URL 주소를 입력하시오");
+			if (url) win = window.open(url);
+			}
+		</script>
+		<button onclick="open_window();">새 창을 엽니다.</button>
+		<button onclick="win.close();">창을 닫습니다.</button>
+	</body>
+</html>

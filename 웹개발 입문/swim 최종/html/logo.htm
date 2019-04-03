@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" charset="UTF-8">
+<title>logo</title>
+</head>
+
+<body>
+<table width="500" height="450" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+	<canvas id = "myCanvas2" width="300" height="450"></canvas>
+	<script type="text/javascript">
+	var canvas1 = document.getElementById("myCanvas2");
+	var myContext1 = canvas1.getContext("2d");
+	
+	myContext1.beginPath();
+	myContext1.arc(150,70,50,1*Math.PI,0);
+	myContext1.closePath();
+	myContext1.stroke();
+	myContext1.beginPath();
+	myContext1.arc(120,100,20,0,2*Math.PI);
+	myContext1.stroke();
+	myContext1.beginPath();
+	myContext1.arc(180,100,20,0,2*Math.PI);
+	myContext1.stroke();
+	myContext1.moveTo(140,100);
+	myContext1.lineTo(160,100);
+	myContext1.stroke();
+	</script>
+	</td>
+  </tr>
+</table>
+</body>
+</html>

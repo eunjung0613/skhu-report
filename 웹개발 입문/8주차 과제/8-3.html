@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>8-3</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<script type ="text/javascript">
+			num1 = prompt("첫번째 정수를 입력하세요.","1")
+			num2 = prompt("두번째 정수를 입력하세요.","1")
+
+			num1 = parseInt(num1)
+			num2 = parseInt(num2)
+				function add(a,b){
+					return (a+b);
+				}
+				function subtract(a,b){
+					return (a-b);
+				}
+				function multiply(a,b){
+					return (a*b);
+				}
+				if (num1 ==0 || num2==0)
+				{
+					function divide(a,b){
+						return alert("0으로는 나눌 수 없습니다.");
+					}
+				}
+				else {
+					function divide(a,b){
+						return (a/b);
+					}
+				}
+			document.write("입력하신 두 수의 덧셈은 "+add(num1,num2)+"입니다."+"<br/>");
+			document.write("입력하신 두 수의 뺄셈은 "+subtract(num1,num2)+"입니다."+"<br/>");
+			document.write("입력하신 두 수의 곱셈은 "+multiply(num1,num2)+"입니다."+"<br/>");
+			document.write("입력하신 두 수의 나눗셈은 "+divide(num1,num2)+"입니다.")
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2018.12.05</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<canvas id = "myCanvas" width = "300" height="200"></canvas>
+		<script type ="text/javascript">
+			var canvas = document.getElementById("myCanvas");
+			var myContext = canvas.getContext("2d");
+			
+			myContext.beginPath();
+			myContext.arc(240, 100, 60, 0, 2*Math.PI);
+			myContext.moveTo(180, 100);
+			myContext.lineTo(300, 100);
+			myContext.moveTo(240, 40);
+			myContext.lineTo(240, 160);
+			myContext.stroke();
+		</script>
+	</body>
+</html>

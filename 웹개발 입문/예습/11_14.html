@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>11월14일 실습</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+		<script type ="text/javascript">
+		var today = new Date();
+		var y = today.getFullYear();
+		var m = today.getMonth()+1;
+		var d = today.getDate();
+		var yo = today.getDay();
+		var yoil = ""
+		var time = today.getTimezoneOffset();
+		if (yo == 0){
+			yoil = "일요일";
+		}
+		else if (yo == 1){
+			yoili = "월요일";
+		}
+		else if (yo == 2){
+			yoil = "화요일";
+		}
+		else if (yo == 3){
+			yoil = "수요일";
+		}
+		else if (yo == 4){
+			yoil = "목요일";
+		}
+		else if (yo == 5){
+			yoil = "금요일";
+		}
+		else if(yo == 6){
+			yoil = "토요일";
+		}
+		if (time < 0){
+			time = -time;
+		}
+		time1 = time/60;
+		time2 = time%60;
+		document.write("오늘 날짜 : "+y+" 년 "+m+" 월 "+d+" 일 "+" "+yoil+"<br/>");
+		document.write("표준시와 현지 시각 간의 표준시차 : "+time1+" 시 "+time2+" 분 입니다. <br/>");
+		document.write("tan(60도) = "+Math.tan(Math.PI/3)+"<br/>");
+		document.write("ceil(5.4) = "+Math.ceil(5.4)+"<br/>");
+		document.write("floor(5.4) = "+Math.floor(5.4)+"<br/>");
+		document.write("round(5.4) = "+Math.round(5.4)+"<br/>");
+		</script>
+	</body>
+</html>

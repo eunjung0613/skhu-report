@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>11월 26일 1</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<script type ="text/javascript">
+		function multiply(){
+			var a = document.getElementById("op1").value;
+			var b = document.getElementById("op2").value;
+			document.getElementById("result").value = parseInt(a)*parseInt(b);
+		}
+		function add(){
+			var c = document.getElementById("op3").value;
+			var d = document.getElementById("op4").value;
+			document.getElementById("result2").value = parseInt(c)+parseInt(d);
+		}
+		function min(){
+			var e = document.getElementById("op5").value;
+			var f = document.getElementById("op6").value;
+			document.getElementById("result3").value = parseInt(e)-parseInt(f);
+		}
+		function nanu(){
+			var g = document.getElementById("op7").value;
+			var h = document.getElementById("op8").value;
+			if (parseInt(h) == 0){
+				alert("0으로 나눌 수 없습니다!");
+			}
+			document.getElementById("result4").value = parseInt(g)/parseInt(h);
+		}
+	</script>
+	<form>
+		<input id = "op1" type="text" size="2"/>*
+		<input id = "op2" type="text" size="2"/>
+		<input type = "button" value="=" onclick="multiply();"/>
+		<input id = "result" type="text" size="2"/></br>
+		<input id = "op3" type="text" size="2"/>+
+		<input id = "op4" type="text" size="2"/>
+		<input type = "button" value="=" onclick="add();"/>
+		<input id = "result2" type="text" size="2"/></br>
+		<input id = "op5" type="text" size="2"/>-
+		<input id = "op6" type="text" size="2"/>
+		<input type = "button" value="=" onclick="min();"/>
+		<input id = "result3" type="text" size="2"/></br>
+		<input id = "op7" type="text" size="2"/>/
+		<input id = "op8" type="text" size="2"/>
+		<input type = "button" value="=" onclick="nanu();"/>
+		<input id = "result4" type="text" size="2"/>
+	</form>
+	</body>
+</html>

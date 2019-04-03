@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>max_array</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<script type="text/javascript">
+		var num_arr = new Array();
+		how = parseInt(prompt("얼마나 입력하시겠습니까?","3"));
+		for (i=0;i<how;i++){
+			a = parseInt(prompt("숫자를 입력하세요.: "));
+			num_arr.push(a);
+		}
+		document.write("입력하신 값 중 가장 큰 값은 "+Math.max.apply(null,num_arr)+"입니다.");
+	</script>
+	</body>
+</html>

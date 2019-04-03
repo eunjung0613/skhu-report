@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>퀴즈5</title>
+		<meta charset = "UTF-8">
+	</head>
+	<body>
+	<table border="1" style = "border-collapse:collapse;">
+	<h2>Employee</h2>
+	<tr><td>사번</td><td>이름</td><td>직책</td></tr>
+	<script type="text/javascript">
+	var employee1 = new Object();
+	employee1.id = 2106;
+	employee1.name = "김창섭";
+	employee1.title = "대리";
+	var employee2 = new Object();
+	employee2.id = 3426;
+	employee2.name = "박영권";
+	employee2.title = "과장";
+	var employee3 = new Object();
+	employee3.id = 1003;
+	employee3.name = "이수민";
+	employee3.title = "부장";
+	document.write("<tr>");
+	for (var p in employee1){
+	document.write("<td>"+employee1[p]+"</td>");
+	}
+	document.write("</tr>");
+	document.write("<tr>");
+	for (var p in employee2){
+	document.write("<td>"+employee2[p]+"</td>");
+	}
+	document.write("</tr>");
+	document.write("<tr>");
+	for (var p in employee3){
+	document.write("<td>"+employee3[p]+"</td>");
+	}
+	document.write("</tr>");
+	</script>
+	</table>
+	</body>
+</html>
